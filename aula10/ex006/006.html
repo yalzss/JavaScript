@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="area" onclick="clicou()" onmouseout="saiu()" onmouseenter=" entrou()">
+        <p>interaja...</p>
+    </div>
+    <script>
+        function clicou(){
+            var a = document.getElementById('area') 
+            a.innerText = 'clicou!'
+            a.style.backgroundColor = 'Black'
+
+        }
+        function entrou() {
+            var a1 = document.getElementById('area')
+            a1.innerText = 'Clique!'
+        }
+        function saiu() {
+            var a2 = document.getElementById('area')
+            a2.style.backgroundColor = 'green'
+            a2.innerText = 'interaja...'
+        }        
+    </script>
+    <!--Tem Como Adicionar os Eventos assim pelo JavaScript: 
+      document.getElementyById('area').addEventListener('click', clicou)
+      document.getElementyById('area').addEventListener('mouseout', saiu)
+
+      -!!NÂO USA PARÊNTESES NO FINAL DE CADA FUNÇÂO IGUAL NO HTML!!-
+    -->
+</body>
+</html>

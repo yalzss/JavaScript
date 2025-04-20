@@ -17,9 +17,13 @@
     <h1>Olá, Mundo!</h1>
     <p>Já me livrei da maldição!!</p>
     <script>
-        window.alert('Olá, Mundo!') // Janela De Alerta
-        window.confirm('Está gostando de JS?') // Janela com OK e Cancel
-        window.prompt('Qual é o seu nome?') // Janela de Pergunta
+        let n1 = Number(window.prompt('Digite um Número: ')) 
+        // O Window.Prompt retorna para mim uma String, memos que eu use um número.(Caracteristica do Comando)
+        let n2 = Number(window.prompt('Digite um Número: '))
+        let s = n1 + n2
+        window.alert(`a soma entre ${n1} e ${n2} é igual a ${s}`) //Concatenação
+        // (number + number) faz adição
+        // (string + string) faz concatenação
     </script>
 </body>
 </html>
