@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="Npais" id="Npais">
+    <input type="button" value="Enviar" onclick="identificador()">
+    <div id="bxtext">
+
+    </div>
+    <script>
+        function identificador() {
+            let pais = document.querySelector('input#Npais').value
+            let texbox = document.querySelector('div#bxtext')
+            if (pais == 'Brasil') {
+                texbox.innerHTML = `Você é do <strong>${pais}</strong>, portanto não é estrangeiro, bem vindo de volta!`
+            } else {
+                texbox.innerHTML = `Você é <strong>estrangeiro!</strong>`
+            }
+        }
+    </script>
+</body>
+</html>
