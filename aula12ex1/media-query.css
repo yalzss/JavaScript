@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 768px)  {
+    section > .bloco-hora {
+        width:  300px;
+        height: 290px;
+    }
+    section > .bloco-hora > p {
+        font-size: 14px;
+        font-weight: 700;
+    }
+}
